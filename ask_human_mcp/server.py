@@ -955,7 +955,7 @@ async def run_stdio_mode(server: AskHumanServer):
     server.start_watching()
 
     try:
-        await server.mcp.run()
+        await server.mcp.run_async()
     except KeyboardInterrupt:
         logger.info("Received keyboard interrupt")
     finally:
