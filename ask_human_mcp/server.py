@@ -34,7 +34,7 @@ from typing import Dict, Optional, Set
 import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.responses import StreamingResponse
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
